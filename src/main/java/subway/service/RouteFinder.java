@@ -19,7 +19,7 @@ public abstract class RouteFinder {
         addStation();
     }
 
-    public List<Station> findRoute(Station startStation, Station endStation) {
+    public List<Station> findRoute(String startStation, String endStation) {
         return dijkstraShortestPath.getPath(startStation, endStation).getVertexList();
     }
 
